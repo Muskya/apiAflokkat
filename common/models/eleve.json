@@ -1,0 +1,38 @@
+{
+  "name": "Eleve",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string",
+      "required": true
+    },
+    "id_formation": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "formation": {
+      "type": "belongsTo",
+      "model": "Formation",
+      "foreignKey": "id_formation"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Formation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "intitule": {
+      "type": "string",
+      "required": true
+    },
+    "duree": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "prix": {
+      "type": "double",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "eleves": {
+      "type": "hasMany",
+      "model": "Eleve",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
