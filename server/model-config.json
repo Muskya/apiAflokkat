@@ -37,5 +37,17 @@
   },
   "Message": {
     "dataSource": null
+  },
+  "Eleve": {
+    "dataSource": "bdd_aflokkat",
+    "public": true
+  },
+  "Formation": {
+    "dataSource": "bdd_aflokkat",
+    "public": true
+  },
+  "formateur": {
+    "dataSource": "bdd_aflokkat",
+    "public": true
   }
 }

@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "bdd_aflokkat": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "bdd_aflokkat",
+    "password": "root",
+    "name": "bdd_aflokkat",
+    "user": "root",
+    "connector": "mysql"
   }
 }
