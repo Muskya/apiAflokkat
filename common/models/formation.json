@@ -1,5 +1,5 @@
 {
-  "name": "Formation",
+  "name": "formation",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -15,25 +15,27 @@
       "required": true
     },
     "duree": {
-      "type": "string",
+      "type": "number",
       "required": true
     },
     "description": {
       "type": "string"
     },
     "prix": {
-      "type": "double",
+      "type": "number",
+      "required": true
+    },
+    "date_debut": {
+      "type": "date",
+      "required": true
+    },
+    "date_fin": {
+      "type": "date",
       "required": true
     }
   },
   "validations": [],
-  "relations": {
-    "eleves": {
-      "type": "hasMany",
-      "model": "Eleve",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

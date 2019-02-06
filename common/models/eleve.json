@@ -1,5 +1,5 @@
 {
-  "name": "Eleve",
+  "name": "eleve",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -16,21 +16,23 @@
     "prenom": {
       "type": "string"
     },
-    "mail": {
+    "email": {
       "type": "string",
       "required": true
     },
-    "id_formation": {
-      "type": "number",
-      "required": true
+    "tel": {
+      "type": "string"
     }
   },
   "validations": [],
   "relations": {
     "formation": {
       "type": "belongsTo",
-      "model": "Formation",
-      "foreignKey": "id_formation"
+      "model": "formation",
+      "foreignKey": "id_formation",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

@@ -1,5 +1,5 @@
 {
-  "name": "formateur",
+  "name": "formulaire",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
@@ -10,26 +10,21 @@
       "type": "number",
       "required": true
     },
-    "nom": {
+    "questions": {
       "type": "string",
       "required": true
     },
-    "prenom": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "tel": {
-      "type": "string"
+    "reponses": {
+      "type": "string",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "formation": {
+    "eleve": {
       "type": "belongsTo",
-      "model": "formation",
-      "foreignKey": "id_formation",
+      "model": "eleve",
+      "foreignKey": "id_eleve",
       "options": {
         "nestRemoting": true
       }
