@@ -17,22 +17,17 @@
     "prenom": {
       "type": "string"
     },
-    "email": {
-      "type": "string"
-    },
-    "tel": {
-      "type": "string"
+    "id_formation": {
+      "type": "number",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "formation": {
+    "formations": {
       "type": "belongsTo",
-      "model": "formation",
-      "foreignKey": "id_formation",
-      "options": {
-        "nestRemoting": true
-      }
+      "model": "Formation",
+      "foreignKey": "id_formation"
     }
   },
   "acls": [],

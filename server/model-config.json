@@ -38,19 +38,11 @@
   "Message": {
     "dataSource": null
   },
-  "eleve": {
+  "Eleve": {
     "dataSource": "bdd_aflokkat",
     "public": true
   },
-  "competence": {
-    "dataSource": "bdd_aflokkat",
-    "public": true
-  },
-  "formulaire": {
-    "dataSource": "bdd_aflokkat",
-    "public": true
-  },
-  "formation": {
+  "Formation": {
     "dataSource": "bdd_aflokkat",
     "public": true
   },
