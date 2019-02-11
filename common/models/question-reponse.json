@@ -1,5 +1,5 @@
 {
-  "name": "eleve",
+  "name": "question_reponse",
   "base": "PersistedModel",
   "idInjection": false,
   "options": {
@@ -10,22 +10,25 @@
       "type": "number",
       "id": true
     },
-    "nom": {
+    "question": {
       "type": "string"
     },
-    "prenom": {
+    "reponse": {
       "type": "string"
     },
-    "email": {
+    "details": {
       "type": "string"
     }
   },
   "validations": [],
   "relations": {
-    "formation": {
+    "eleve": {
       "type": "belongsTo",
-      "model": "formation",
-      "foreignKey": "id_formation"
+      "model": "eleve",
+      "foreignKey": "id_eleve",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

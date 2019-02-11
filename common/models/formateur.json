@@ -1,32 +1,33 @@
 {
   "name": "formateur",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
     "id": {
       "type": "number",
-      "required": true
+      "id": true
     },
     "nom": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "prenom": {
       "type": "string"
     },
-    "id_formation": {
-      "type": "number",
-      "required": true
+    "email": {
+      "type": "string"
+    },
+    "tel": {
+      "type": "string"
     }
   },
   "validations": [],
   "relations": {
     "formations": {
       "type": "belongsTo",
-      "model": "Formation",
+      "model": "formation",
       "foreignKey": "id_formation"
     }
   },

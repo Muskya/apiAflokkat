@@ -38,15 +38,23 @@
   "Message": {
     "dataSource": null
   },
-  "Eleve": {
+  "eleve": {
     "dataSource": "bdd_aflokkat",
     "public": true
   },
-  "Formation": {
+  "formation": {
     "dataSource": "bdd_aflokkat",
     "public": true
   },
   "formateur": {
+    "dataSource": "bdd_aflokkat",
+    "public": true
+  },
+  "formulaire": {
+    "dataSource": "bdd_aflokkat",
+    "public": true
+  },
+  "question_reponse": {
     "dataSource": "bdd_aflokkat",
     "public": true
   }

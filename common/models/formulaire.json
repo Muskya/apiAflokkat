@@ -1,0 +1,46 @@
+{
+  "name": "formulaire",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "date_completion": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "eleve": {
+      "type": "belongsTo",
+      "model": "eleve",
+      "foreignKey": "id_eleve",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "formateur": {
+      "type": "belongsTo",
+      "model": "formateur",
+      "foreignKey": "id_formateur",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "formation": {
+      "type": "belongsTo",
+      "model": "formation",
+      "foreignKey": "id_formation",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
