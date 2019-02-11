@@ -11,10 +11,12 @@
       "id": true
     },
     "question": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "reponse": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "details": {
       "type": "string"
@@ -25,10 +27,7 @@
     "eleve": {
       "type": "belongsTo",
       "model": "eleve",
-      "foreignKey": "id_eleve",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "id_eleve"
     }
   },
   "acls": [],
