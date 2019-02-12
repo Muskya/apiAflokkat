@@ -23,22 +23,6 @@
       "options": {
         "nestRemoting": true
       }
-    },
-    "formateur": {
-      "type": "belongsTo",
-      "model": "formateur",
-      "foreignKey": "id_formateur",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "formation": {
-      "type": "belongsTo",
-      "model": "formation",
-      "foreignKey": "id_formation",
-      "options": {
-        "nestRemoting": true
-      }
     }
   },
   "acls": [],
