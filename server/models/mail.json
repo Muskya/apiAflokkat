@@ -1,0 +1,36 @@
+{
+  "name": "mail",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true
+    },
+    "a": {
+      "type": "string",
+      "required": true
+    },
+    "de": {
+      "type": "string",
+      "required": true
+    },
+    "sujet": {
+      "type": "string",
+      "required": true
+    },
+    "texte": {
+      "type": "string"
+    },
+    "html": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

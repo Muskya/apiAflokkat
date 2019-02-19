@@ -57,5 +57,13 @@
   "question_reponse": {
     "dataSource": "bdd_aflokkat",
     "public": true
+  },
+  "mail": {
+    "dataSource": "bdd_aflokkat",
+    "public": true
+  },
+  "emailsender": {
+    "dataSource": "emailconnector",
+    "public": true
   }
 }

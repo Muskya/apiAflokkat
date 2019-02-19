@@ -15,5 +15,7 @@
 .project
 .strong-pm
 coverage
+/models/email.js
+/models/email.json
 node_modules
 npm-debug.log

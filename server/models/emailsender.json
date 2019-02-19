@@ -1,0 +1,32 @@
+{
+  "name": "emailsender",
+  "base": "Email",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "a": {
+      "type": "string",
+      "required": true
+    },
+    "de": {
+      "type": "string",
+      "required": true
+    },
+    "sujet": {
+      "type": "string",
+      "required": true
+    },
+    "texte": {
+      "type": "string"
+    },
+    "html": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

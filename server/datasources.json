@@ -12,5 +12,21 @@
     "name": "bdd_aflokkat",
     "user": "root",
     "connector": "mysql"
+  },
+  "emailconnector": {
+    "name": "emailconnector",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "auth": {
+          "user": "theorebdevtests@gmail.com",
+          "pass": "azeqsdwxc123"
+        }
+      }
+    ]
   }
 }
