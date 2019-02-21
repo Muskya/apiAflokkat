@@ -4,16 +4,19 @@ module.exports = function(mail) {
 
     //Hook après enregistrement d'un mail dans la BDD
     mail.observe('after save', function (ctx, next) {
+      
         console.log("Entrée dans le hook");
+        console.log("Je vais enregistrer une instance de mail");
+        console.log(ctx.instance); //Renvoi la structure du mail en JSON
+        console.log(ctx.instance.a); //Renvoi l'adresse destinataire
+        console.log(ctx.instance.de); //Renvoi l'adresse expéditrice
+
         mail.app.models.emailsender.send({
-          to: 'theoporticcio@gmail.com', //Adresse élève (enregistré dans BDD)
-          from: 'theorebdevtests@gmail.com', //Adresse administration Aflokkat
-          subject: 'Questionnaire d\'évaluation à froid',
-          //Remplacer le texte par les nom/prénom de l'élève + lien vers 
-          //un nouveau questionnaire
-          text: 'Bonjour Nom_Eleve Prénom_Eleve, voici un lien vers le nouveau questionnaire' + 
-          'd\'évaluation à remplir :', 
-          html: 'my <em>html</em>'
+          to: ctx.instance.a, //Adresse élève (enregistré dans BDD)
+          from: ctx.instance.de , //Adresse administration Aflokkat
+          subject: ctx.instance.sujet,
+          text: ctx.instance.texte, 
+          html: ctx.instance.html
         }, function(err, mail) {
           if (err) {
               console.log("Erreur envoi de mail " + err);
